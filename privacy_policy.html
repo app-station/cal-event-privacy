@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chính sách Quyền riêng tư - CalEvent</title>
+    <title>Chính sách Quyền riêng tư - Lịch &amp; Ghi chú</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -96,11 +96,11 @@
     <div class="container">
         <div class="header">
             <h1>Chính sách Quyền riêng tư</h1>
-            <div class="app-name">CalEvent — Lịch & Ghi chú cá nhân</div>
+            <div class="app-name">Lịch &amp; Ghi chú cá nhân</div>
             <div class="update-date">Ngày cập nhật: 21 tháng 11, 2026</div>
         </div>
 
-        <p>Chào mừng bạn đến với <strong>CalEvent</strong> (sau đây gọi là "Ứng dụng"). Ứng dụng được phát triển và vận hành bởi <strong>AppStation</strong> (sau đây gọi là "Chúng tôi"). Chúng tôi cam kết bảo vệ quyền riêng tư và dữ liệu cá nhân của bạn. Chính sách này giải thích cách chúng tôi thu thập, sử dụng, lưu trữ và bảo vệ thông tin khi bạn sử dụng Ứng dụng.</p>
+        <p>Chào mừng bạn đến với <strong>Lịch &amp; Ghi chú</strong> (sau đây gọi là "Ứng dụng"). Ứng dụng được phát triển và vận hành bởi <strong>Groot Studio</strong> (sau đây gọi là "Chúng tôi"). Chúng tôi cam kết bảo vệ quyền riêng tư và dữ liệu cá nhân của bạn. Chính sách này giải thích cách chúng tôi thu thập, sử dụng, lưu trữ và bảo vệ thông tin khi bạn sử dụng Ứng dụng.</p>
 
         <h2>1. Thông tin chúng tôi thu thập</h2>
 
@@ -133,6 +133,11 @@
                     <td>Nội dung mã QR khi bạn sử dụng tính năng quét</td>
                     <td>Chức năng quét và chia sẻ thông tin qua QR</td>
                 </tr>
+                <tr>
+                    <td><strong>Mã định danh thiết bị (FCM)</strong></td>
+                    <td>Firebase Cloud Messaging token để nhận thông báo đẩy</td>
+                    <td>Gửi thông báo nhắc hẹn từ máy chủ đến thiết bị của bạn</td>
+                </tr>
             </tbody>
         </table>
 
@@ -141,6 +146,7 @@
         <ul>
             <li><strong>Micro (RECORD_AUDIO)</strong>: Chỉ được kích hoạt khi bạn chủ động sử dụng tính năng ghi âm tin nhắn thoại hoặc ghi chú âm thanh. Ứng dụng không ghi âm nền.</li>
             <li><strong>Camera</strong>: Chỉ được kích hoạt khi bạn sử dụng tính năng quét mã QR hoặc chụp ảnh đính kèm.</li>
+            <li><strong>Thư viện ảnh</strong>: Chỉ được truy cập khi bạn chọn ảnh từ thư viện để đính kèm vào sự kiện hoặc ghi chú.</li>
             <li><strong>Thông báo (POST_NOTIFICATIONS)</strong>: Hiển thị nhắc hẹn sự kiện theo lịch trình bạn đã đặt.</li>
             <li><strong>Báo thức chính xác (SCHEDULE_EXACT_ALARM, USE_EXACT_ALARM)</strong>: Đảm bảo thông báo nhắc hẹn được gửi đúng thời điểm, kể cả khi thiết bị ở chế độ tiết kiệm pin.</li>
             <li><strong>Khởi động cùng hệ thống (RECEIVE_BOOT_COMPLETED)</strong>: Khôi phục lại các thông báo nhắc hẹn đã lên lịch sau khi thiết bị khởi động lại.</li>
@@ -172,38 +178,44 @@
             <li><strong>Xác thực</strong>: Chúng tôi sử dụng Firebase Authentication — dịch vụ xác thực bảo mật của Google. Mật khẩu của bạn được mã hóa (hash) và không được lưu trữ dưới dạng văn bản thuần.</li>
         </ul>
 
-        <h2>5. Dịch vụ bên thứ ba</h2>
+        <h2>5. Thời gian lưu trữ dữ liệu</h2>
+        <p>Dữ liệu cá nhân của bạn được lưu trữ cho đến khi bạn chủ động xóa hoặc yêu cầu xóa tài khoản. Sau khi nhận yêu cầu xóa tài khoản, chúng tôi sẽ xóa toàn bộ dữ liệu liên quan trong vòng 30 ngày.</p>
+
+        <h2>6. Chuyển giao dữ liệu quốc tế</h2>
+        <p>Dữ liệu đồng bộ qua Firebase có thể được lưu trữ trên máy chủ của Google tại các quốc gia khác ngoài Việt Nam. Google cam kết tuân thủ các tiêu chuẩn bảo mật quốc tế và các quy định bảo vệ dữ liệu hiện hành.</p>
+
+        <h2>7. Dịch vụ bên thứ ba</h2>
         <p>Ứng dụng sử dụng các dịch vụ bên thứ ba sau, mỗi dịch vụ có chính sách quyền riêng tư riêng:</p>
         <ul>
             <li><a href="https://firebase.google.com/support/privacy" target="_blank">Google Firebase</a> (Authentication, Cloud Firestore, Cloud Storage, Cloud Messaging)</li>
             <li><a href="https://policies.google.com/privacy" target="_blank">Google Sign-In</a></li>
         </ul>
 
-        <h2>6. Quyền của bạn</h2>
+        <h2>8. Quyền của bạn</h2>
         <p>Bạn có toàn quyền kiểm soát dữ liệu cá nhân của mình:</p>
         <ul>
             <li><strong>Truy cập & Chỉnh sửa</strong>: Bạn có thể xem và chỉnh sửa thông tin tài khoản, sự kiện, ghi chú bất kỳ lúc nào trong Ứng dụng.</li>
             <li><strong>Xóa dữ liệu</strong>: Bạn có thể xóa từng sự kiện, ghi chú hoặc tệp đính kèm riêng lẻ.</li>
-            <li><strong>Xóa tài khoản</strong>: Bạn có thể yêu cầu xóa toàn bộ tài khoản và dữ liệu liên quan bằng cách gửi email đến địa chỉ liên hệ bên dưới. Chúng tôi sẽ xử lý yêu cầu trong vòng 30 ngày.</li>
+            <li><strong>Xóa tài khoản</strong>: Bạn có thể xóa tài khoản trực tiếp trong Ứng dụng tại mục <strong>Hồ sơ → Xóa tài khoản</strong>. Toàn bộ dữ liệu liên quan sẽ được xóa ngay lập tức.</li>
             <li><strong>Thu hồi quyền</strong>: Bạn có thể thu hồi các quyền truy cập (micro, camera, thông báo) bất kỳ lúc nào trong phần Cài đặt của thiết bị.</li>
         </ul>
 
-        <h2>7. Bảo vệ trẻ em</h2>
+        <h2>9. Bảo vệ trẻ em</h2>
         <p>Ứng dụng không nhắm mục tiêu đến trẻ em dưới 13 tuổi. Chúng tôi không cố ý thu thập thông tin cá nhân từ trẻ em. Nếu bạn phát hiện con em mình đã cung cấp thông tin cho chúng tôi, vui lòng liên hệ ngay để chúng tôi xóa dữ liệu đó.</p>
 
-        <h2>8. Thay đổi chính sách</h2>
+        <h2>10. Thay đổi chính sách</h2>
         <p>Chúng tôi có thể cập nhật Chính sách Quyền riêng tư này theo thời gian. Mọi thay đổi sẽ được đăng tải trên trang này cùng ngày cập nhật mới. Việc bạn tiếp tục sử dụng Ứng dụng sau khi chính sách được cập nhật đồng nghĩa với việc bạn chấp nhận các thay đổi đó.</p>
 
-        <h2>9. Liên hệ</h2>
+        <h2>11. Liên hệ</h2>
         <p>Nếu bạn có bất kỳ câu hỏi hoặc yêu cầu nào liên quan đến quyền riêng tư, vui lòng liên hệ:</p>
         <div class="highlight">
-            <strong>AppStation</strong><br>
-            📧 Email: <a href="mailto:longhuy.dev@gmail.com">longhuy.dev@gmail.com</a><br>
-            📱 Ứng dụng: CalEvent — Lịch & Ghi chú cá nhân
+            <strong>Groot Studio</strong><br>
+            📧 Email: <a href="mailto:huycao7397@gmail.com">huycao7397@gmail.com</a><br>
+            📱 Ứng dụng: Lịch &amp; Ghi chú
         </div>
 
         <div class="footer">
-            <p>© 2026 AppStation. Mọi quyền được bảo lưu.</p>
+            <p>© 2026 Groot Studio. Mọi quyền được bảo lưu.</p>
             <p>Chính sách này có hiệu lực từ ngày 21 tháng 11, 2026.</p>
         </div>
     </div>
